@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Negative Margin Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-container">
+                    <h1 class="hero-title">Negative margin layout</h1>
+                    <p class="hero-desc">The container should be in <code>display:relative</code> to enable <code>z-index</code> and <code>padding-block</code> for the height.</p>
+                </div> <!-- hero-container -->
+            </div> <!-- hero-wrapper -->
+            <div class="intro-container">
+                <div class="intro-content">
+                    <h2>position absolute</h2>
+                    <p>The image should be <code>position: absolute</code> and <code>relative</code> to the container, in order to maitain the position.</p>
+                </div>
+                <img src="/images/girl_image.png" alt="" class="intro-image">
+            </div> <!-- intro-container -->
+        </div> <!-- container -->
+    </section>
+</body>
+</html>

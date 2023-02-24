@@ -1,0 +1,108 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-container {
+    position: relative;
+    padding-block: 10% 23.06%;
+    background-image: url(/images/header_image.png);
+    background-repeat: no-repeat;
+    z-index: 3;
+    background-size: cover;
+}
+
+.hero-title {
+    font-size: clamp(1em, 5vw, 7em);
+    text-transform: capitalize;
+    color: white;
+    width: 100%;
+    max-width: 20ch;
+    padding-inline-start: 3vw;
+    line-height: 0.95;
+    font-weight: 700;
+}
+.hero-desc {
+    color: white;
+    padding-inline-start: 3vw;
+    font-size: clamp(0.5em, 3vw, 1em);
+    max-width: 45ch;
+    font-weight: 400;
+    margin-block-start: 1em;
+}
+code {
+    font-weight: bold;
+}
+.intro-content h2 {
+    font-size: clamp(1.25em, 5vw, 7em);
+    text-transform: capitalize;
+    line-height: 1;
+    font-weight: 700;
+}
+.intro-content p {
+    font-size: clamp(0.5em, 2vw, 1em);
+    width: 100%;
+    max-width: 50ch;
+    font-weight: 400;
+}
+.intro-image {
+    position: absolute;
+    width: 60%;
+    top: -55%;
+    right: 0;
+}
+.intro-content {
+    width: 100%;
+    max-width: 40%;
+    padding-inline-start: 3vw;
+    padding-block-start: 10%;
+}
+.intro-container {
+    position: relative;
+}
+@media (max-width: 991px) {
+    .intro-image {
+        top: -45%;
+    }
+}
+@media (max-width: 374px) {
+    .intro-content {
+        padding-block-start: 5%;
+    }
+}
+
+/** Another way to approach negative margins on images **/
+/**
+.intro-container {
+    position: relative;
+    padding-block-start: 20%;
+    margin-block-start: -11%;
+    width: 100%;
+}
+.intro-image {
+    width: 60%;
+    position: absolute;
+    top: -1em;
+    right: 0;
+}
+.intro-content {
+    width: 100%;
+    max-width: 50%;
+    padding-inline-start: 3vw;
+}
+
+@media (max-width: 767px) {
+    .intro-container {
+        margin-block-start: -9%;
+    }
+}
+@media (max-width: 478px) {
+    .intro-container {
+        margin-block-start: -7%;
+        padding-block-start: 13%;
+    }
+}
+**/
